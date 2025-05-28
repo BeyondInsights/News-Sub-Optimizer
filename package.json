@@ -10,6 +10,12 @@
     "start": "next start",
     "lint": "next lint",
     "typecheck": "tsc --noEmit"
+  }
+  
+  {
+    "overrides": {
+      "@opentelemetry/exporter-jaeger": "npm:@opentelemetry/exporter-trace-otlp-http@latest"
+    }
   },
   "dependencies": {
     "@genkit-ai/googleai": "^1.8.0",
