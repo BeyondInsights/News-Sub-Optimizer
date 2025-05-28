@@ -2,7 +2,7 @@
 import React, { useState, useEffect, useCallback, useRef } from 'react';
 import { runServerSimulation, getProductProfile, runPriceSensitivityAnalysis } from './actions'; // Import the server action
 import type { ProductConfig, ReportData, ReportType, OutputType, ProductProfileData, SensitivityPoint, MarketFactors } from '@/lib/types';
-import demographicsSample from '@/data/demographics.json'; // Import sample demographics
+const demographicsSample: any[] = [];
 import attributeImportanceSample from '@/data/attributeImportance.json';
 import partWorthUtilitiesSample from '@/data/partWorthUtilities.json';
 import { respondentData, verticalMapping } from '@/lib/data';
