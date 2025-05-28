@@ -1,0 +1,53 @@
+
+[
+  {
+    "Respondent_ID": "R0001",
+    "RF_Unlimited_Articles": 0.3, "RF_Short_Form_Video": 0.2, "RF_Subscriber_Only": 0.4, "RF_CNN_Reality_Check": 0.5, "RF_Podcast_Club": 0.3, "RF_Local_News": 0.25, "RF_CNN_You": 0.35, "RF_Tech_Insider": 0.28, "RF_Bonus_Sub": 0.1, "RF_Global_News": 0.15, "RF_Live_Events": 0.22, "RF_Ask_CNN": 0.18, "RF_AI_Anchor": 0.05, "RF_Business_Markets": 0.26, "RF_CNN_Archive": 0.12,
+    "SF_Live_News": 0.6, "SF_Catch_Up": 0.4, "SF_Library": 0.5, "SF_Playlists": 0.3, "SF_Multiview": 0.7, "SF_Daily_Briefings": 0.45, "SF_Fact_Checking": 0.55, "SF_CNN_You_Stream": 0.38, "SF_Live_QA": 0.42, "SF_Global_Feeds": 0.2, "SF_Local_News": 0.25, "SF_Short_Series": 0.33, "SF_Live_Commentary": 0.15, "SF_Interactive": 0.1, "SF_News_Ticker": 0.08, "SF_Exclusive_Events": 0.3
+  },
+  {
+    "Respondent_ID": "R0002",
+    "RF_Unlimited_Articles": 0.35, "RF_Short_Form_Video": 0.15, "RF_Subscriber_Only": 0.45, "RF_CNN_Reality_Check": 0.4, "RF_Podcast_Club": 0.35, "RF_Local_News": 0.3, "RF_CNN_You": 0.3, "RF_Tech_Insider": 0.32, "RF_Bonus_Sub": 0.12, "RF_Global_News": 0.18, "RF_Live_Events": 0.20, "RF_Ask_CNN": 0.20, "RF_AI_Anchor": 0.08, "RF_Business_Markets": 0.23, "RF_CNN_Archive": 0.15,
+    "SF_Live_News": 0.55, "SF_Catch_Up": 0.42, "SF_Library": 0.48, "SF_Playlists": 0.33, "SF_Multiview": 0.65, "SF_Daily_Briefings": 0.5, "SF_Fact_Checking": 0.5, "SF_CNN_You_Stream": 0.4, "SF_Live_QA": 0.4, "SF_Global_Feeds": 0.22, "SF_Local_News": 0.28, "SF_Short_Series": 0.30, "SF_Live_Commentary": 0.18, "SF_Interactive": 0.12, "SF_News_Ticker": 0.1, "SF_Exclusive_Events": 0.32
+  },
+  {
+    "Respondent_ID": "R0003",
+    "RF_Unlimited_Articles": 0.2, "RF_Short_Form_Video": 0.25, "RF_Subscriber_Only": 0.3, "RF_CNN_Reality_Check": 0.4, "RF_Podcast_Club": 0.32, "RF_Local_News": 0.28, "RF_CNN_You": 0.30, "RF_Tech_Insider": 0.25, "RF_Bonus_Sub": 0.15, "RF_Global_News": 0.10, "RF_Live_Events": 0.20, "RF_Ask_CNN": 0.15, "RF_AI_Anchor": 0.1, "RF_Business_Markets": 0.20, "RF_CNN_Archive": 0.18,
+    "SF_Live_News": 0.5, "SF_Catch_Up": 0.35, "SF_Library": 0.45, "SF_Playlists": 0.32, "SF_Multiview": 0.6, "SF_Daily_Briefings": 0.40, "SF_Fact_Checking": 0.50, "SF_CNN_You_Stream": 0.35, "SF_Live_QA": 0.40, "SF_Global_Feeds": 0.18, "SF_Local_News": 0.22, "SF_Short_Series": 0.30, "SF_Live_Commentary": 0.12, "SF_Interactive": 0.15, "SF_News_Ticker": 0.05, "SF_Exclusive_Events": 0.28
+  },
+  {
+    "Respondent_ID": "R0004",
+    "RF_Unlimited_Articles": 0.32, "RF_Short_Form_Video": 0.18, "RF_Subscriber_Only": 0.42, "RF_CNN_Reality_Check": 0.48, "RF_Podcast_Club": 0.28, "RF_Local_News": 0.22, "RF_CNN_You": 0.38, "RF_Tech_Insider": 0.30, "RF_Bonus_Sub": 0.08, "RF_Global_News": 0.12, "RF_Live_Events": 0.25, "RF_Ask_CNN": 0.22, "RF_AI_Anchor": 0.03, "RF_Business_Markets": 0.28, "RF_CNN_Archive": 0.10,
+    "SF_Live_News": 0.62, "SF_Catch_Up": 0.42, "SF_Library": 0.52, "SF_Playlists": 0.28, "SF_Multiview": 0.72, "SF_Daily_Briefings": 0.48, "SF_Fact_Checking": 0.58, "SF_CNN_You_Stream": 0.32, "SF_Live_QA": 0.45, "SF_Global_Feeds": 0.25, "SF_Local_News": 0.20, "SF_Short_Series": 0.35, "SF_Live_Commentary": 0.18, "SF_Interactive": 0.08, "SF_News_Ticker": 0.12, "SF_Exclusive_Events": 0.35
+  },
+  {
+    "Respondent_ID": "R0005",
+    "RF_Unlimited_Articles": 0.28, "RF_Short_Form_Video": 0.22, "RF_Subscriber_Only": 0.38, "RF_CNN_Reality_Check": 0.42, "RF_Podcast_Club": 0.33, "RF_Local_News": 0.27, "RF_CNN_You": 0.33, "RF_Tech_Insider": 0.27, "RF_Bonus_Sub": 0.13, "RF_Global_News": 0.13, "RF_Live_Events": 0.23, "RF_Ask_CNN": 0.17, "RF_AI_Anchor": 0.07, "RF_Business_Markets": 0.23, "RF_CNN_Archive": 0.13,
+    "SF_Live_News": 0.58, "SF_Catch_Up": 0.38, "SF_Library": 0.42, "SF_Playlists": 0.30, "SF_Multiview": 0.68, "SF_Daily_Briefings": 0.43, "SF_Fact_Checking": 0.53, "SF_CNN_You_Stream": 0.37, "SF_Live_QA": 0.43, "SF_Global_Feeds": 0.20, "SF_Local_News": 0.27, "SF_Short_Series": 0.32, "SF_Live_Commentary": 0.13, "SF_Interactive": 0.13, "SF_News_Ticker": 0.07, "SF_Exclusive_Events": 0.33
+  },
+  {
+    "Respondent_ID": "R0006",
+    "RF_Unlimited_Articles": 0.31, "RF_Short_Form_Video": 0.19, "RF_Subscriber_Only": 0.41, "RF_CNN_Reality_Check": 0.41, "RF_Podcast_Club": 0.31, "RF_Local_News": 0.31, "RF_CNN_You": 0.31, "RF_Tech_Insider": 0.31, "RF_Bonus_Sub": 0.11, "RF_Global_News": 0.16, "RF_Live_Events": 0.21, "RF_Ask_CNN": 0.21, "RF_AI_Anchor": 0.06, "RF_Business_Markets": 0.21, "RF_CNN_Archive": 0.16,
+    "SF_Live_News": 0.51, "SF_Catch_Up": 0.41, "SF_Library": 0.51, "SF_Playlists": 0.31, "SF_Multiview": 0.61, "SF_Daily_Briefings": 0.51, "SF_Fact_Checking": 0.51, "SF_CNN_You_Stream": 0.41, "SF_Live_QA": 0.41, "SF_Global_Feeds": 0.21, "SF_Local_News": 0.26, "SF_Short_Series": 0.31, "SF_Live_Commentary": 0.16, "SF_Interactive": 0.11, "SF_News_Ticker": 0.11, "SF_Exclusive_Events": 0.31
+  },
+  {
+    "Respondent_ID": "R0007",
+    "RF_Unlimited_Articles": 0.25, "RF_Short_Form_Video": 0.28, "RF_Subscriber_Only": 0.35, "RF_CNN_Reality_Check": 0.45, "RF_Podcast_Club": 0.30, "RF_Local_News": 0.20, "RF_CNN_You": 0.32, "RF_Tech_Insider": 0.22, "RF_Bonus_Sub": 0.18, "RF_Global_News": 0.08, "RF_Live_Events": 0.28, "RF_Ask_CNN": 0.12, "RF_AI_Anchor": 0.12, "RF_Business_Markets": 0.28, "RF_CNN_Archive": 0.20,
+    "SF_Live_News": 0.45, "SF_Catch_Up": 0.30, "SF_Library": 0.40, "SF_Playlists": 0.35, "SF_Multiview": 0.55, "SF_Daily_Briefings": 0.38, "SF_Fact_Checking": 0.48, "SF_CNN_You_Stream": 0.30, "SF_Live_QA": 0.38, "SF_Global_Feeds": 0.12, "SF_Local_News": 0.20, "SF_Short_Series": 0.28, "SF_Live_Commentary": 0.10, "SF_Interactive": 0.18, "SF_News_Ticker": 0.03, "SF_Exclusive_Events": 0.25
+  },
+  {
+    "Respondent_ID": "R0008",
+    "RF_Unlimited_Articles": 0.33, "RF_Short_Form_Video": 0.17, "RF_Subscriber_Only": 0.43, "RF_CNN_Reality_Check": 0.47, "RF_Podcast_Club": 0.27, "RF_Local_News": 0.23, "RF_CNN_You": 0.37, "RF_Tech_Insider": 0.33, "RF_Bonus_Sub": 0.07, "RF_Global_News": 0.13, "RF_Live_Events": 0.27, "RF_Ask_CNN": 0.23, "RF_AI_Anchor": 0.04, "RF_Business_Markets": 0.27, "RF_CNN_Archive": 0.09,
+    "SF_Live_News": 0.63, "SF_Catch_Up": 0.43, "SF_Library": 0.53, "SF_Playlists": 0.27, "SF_Multiview": 0.73, "SF_Daily_Briefings": 0.47, "SF_Fact_Checking": 0.57, "SF_CNN_You_Stream": 0.33, "SF_Live_QA": 0.47, "SF_Global_Feeds": 0.27, "SF_Local_News": 0.19, "SF_Short_Series": 0.37, "SF_Live_Commentary": 0.17, "SF_Interactive": 0.07, "SF_News_Ticker": 0.13, "SF_Exclusive_Events": 0.37
+  },
+  {
+    "Respondent_ID": "R0009",
+    "RF_Unlimited_Articles": 0.29, "RF_Short_Form_Video": 0.21, "RF_Subscriber_Only": 0.39, "RF_CNN_Reality_Check": 0.43, "RF_Podcast_Club": 0.34, "RF_Local_News": 0.26, "RF_CNN_You": 0.34, "RF_Tech_Insider": 0.26, "RF_Bonus_Sub": 0.14, "RF_Global_News": 0.14, "RF_Live_Events": 0.24, "RF_Ask_CNN": 0.16, "RF_AI_Anchor": 0.09, "RF_Business_Markets": 0.24, "RF_CNN_Archive": 0.14,
+    "SF_Live_News": 0.59, "SF_Catch_Up": 0.39, "SF_Library": 0.43, "SF_Playlists": 0.34, "SF_Multiview": 0.69, "SF_Daily_Briefings": 0.44, "SF_Fact_Checking": 0.54, "SF_CNN_You_Stream": 0.36, "SF_Live_QA": 0.44, "SF_Global_Feeds": 0.19, "SF_Local_News": 0.26, "SF_Short_Series": 0.34, "SF_Live_Commentary": 0.14, "SF_Interactive": 0.14, "SF_News_Ticker": 0.09, "SF_Exclusive_Events": 0.34
+  },
+  {
+    "Respondent_ID": "R0010",
+    "RF_Unlimited_Articles": 0.27, "RF_Short_Form_Video": 0.23, "RF_Subscriber_Only": 0.37, "RF_CNN_Reality_Check": 0.46, "RF_Podcast_Club": 0.29, "RF_Local_News": 0.29, "RF_CNN_You": 0.29, "RF_Tech_Insider": 0.29, "RF_Bonus_Sub": 0.16, "RF_Global_News": 0.11, "RF_Live_Events": 0.26, "RF_Ask_CNN": 0.19, "RF_AI_Anchor": 0.11, "RF_Business_Markets": 0.29, "RF_CNN_Archive": 0.11,
+    "SF_Live_News": 0.49, "SF_Catch_Up": 0.36, "SF_Library": 0.49, "SF_Playlists": 0.29, "SF_Multiview": 0.59, "SF_Daily_Briefings": 0.49, "SF_Fact_Checking": 0.49, "SF_CNN_You_Stream": 0.29, "SF_Live_QA": 0.39, "SF_Global_Feeds": 0.16, "SF_Local_News": 0.21, "SF_Short_Series": 0.29, "SF_Live_Commentary": 0.11, "SF_Interactive": 0.16, "SF_News_Ticker": 0.06, "SF_Exclusive_Events": 0.29
+  }
+]

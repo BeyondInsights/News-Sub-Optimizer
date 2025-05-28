@@ -1,0 +1,111 @@
+
+{
+  "CNN Weather & Natural Phenomena": {
+    "concept": "CNN’s comprehensive weather and science service prepares you for the weather every day, helps you appreciate the natural world around you, and allows you to stay safe during major storms.",
+    "features": [
+      "Real-Time Forecasts: Our forecasts are constantly updated and customized to your preferred locations to help you stay on top of major shifts in the weather. Includes real-time updates, 72-hour forecast, and 10-day forecast.",
+      "Storm Event Hub: Live coverage of major storms before, during and after the event. Includes live video, photos, storm forecasts, and analysis. Updated frequently.",
+      "Live Q&A: During significant weather events, ask CNN’s meteorologists questions and get immediate answers.",
+      "Science & Nature Explainers: Interactive, visual stories that help you understand natural phenomena such as volcanoes, earthquakes and the aurora borealis.",
+      "Space & Stargazing: Never miss a meteor show, lunar eclipse, or wolf moon with our stargazing updates. Allows you to set one-time notifications so you don’t forget.",
+      "Ad Light: This product has a premium, modern user experience with limited interruptions from advertising."
+    ]
+  },
+  "CNN Expert Buying Guide": {
+    "concept": "Access trusted experts to make the right buying decision for you and your household with CNN’s product reviews service.",
+    "features": [
+      "Expert Product Reviews: Comprehensive product reviews database and side-by-side comparisons of top products in each category, created by specialists across different categories.",
+      "Video: To help make important buying decisions, watch our premium video guides where experts explain a product category, break down considerations and make recommendations for different use cases.",
+      "Expert Consultations: Sign up for a 10-minute session with one of our experts to get personalized input on a major buying decision.",
+      "To-Do List and Shopping Guides: Stay prepared and level up your home experience by referencing our seasonal guides, such as “How to Winterize Your Home” and “Kitchen Pantry Essentials.”",
+      "Deal Tracker: Save money on your next purchase by signing up for our product pricing alerts.",
+      "Community Recommendations: Read ratings and product reviews by other customers to help inform your buying decision and rate your own purchases; participate in forums to discuss specific product questions."
+    ]
+  },
+  "CNN Longevity": {
+    "concept": "Your resource on how to live a healthier, longer, fuller life. The latest science-based guidance on fitness, nutrition, mental health and medicine for health-minded adults.",
+    "features": [
+      "Research: Expert insights on the latest scientific research and studies related to fitness, diet, mental health, and aging.",
+      "Exercise: Downloadable workout plans and video guided exercise routines for different age brackets and levels of experience.",
+      "Downloadable Programs: Daily, weekly, and monthly guides on how to achieve a specific wellness goal including cultivating a meditation practice, mastering the basics of yoga, and reducing cholesterol in your diet.",
+      "Digital Tools: Calendaring, progress trackers, and checklists / reminders that help you stay accountable.",
+      "Guidance & Inspiration: Stories from thought leaders and everyday people about how to live life to the fullest. Topics range from relationships to menopause to centenarian stories.",
+      "Expert Q&As: Ask our panel of experts, including Dr. Sanjay Gupta and Dana Santas, questions about specific topics and get immediate answers."
+    ]
+  },
+  "CNN Meditation & Mindfulness": {
+    "concept": "Nurture your emotional well-being with CNN's premium meditation and mindfulness service that offers guided practices, expert advice, and practical tools to help you reduce stress and find balance.",
+    "features": [
+      "Audio Guides: Guided meditation sessions and mindfulness exercises.",
+      "Topic Guides: In-depth articles and videos that offer expert advice on the latest science and trends in mental health.",
+      "Personal Trackers: Tools to track your mood, anxiety and stress levels; set goals and monitor your progress over time.",
+      "Other Media: Exclusive podcasts and video series featuring our mental health and mindfulness experts to help you manage your stress effectively.",
+      "Mindfulness Community: Connect with other community members who are also looking to reduce stress and bring balance in their lives."
+    ]
+  },
+  "CNN Fitness": {
+    "concept": "Reach your peak health and performance with CNN's premium fitness and exercise app that offers tailored workout routines and interactive tools to help you achieve your fitness goals.",
+    "features": [
+      "Exercise Video Library: Guided video exercise routines for every body type, which allow you to do the workouts at home.",
+      "How-To Training Guides: Customizable workout plans and fitness how-to guides to help you maximize the impact of your workout.",
+      "Fitness Consultations: Talk to our fitness experts and get real-time answers to your questions.",
+      "Special Reports: Get in-depth insights on the latest fitness trends and training methods so you stay in the know on the latest scientific thinking.",
+      "Training Tools: Track your workouts with our interactive tools to see your progress and share with your friends.",
+      "Community: Get motivated by the community. Share your progress and latest achievements, get affirmation."
+    ]
+  },
+  "CNN Entertainment Tracker": {
+    "concept": "A social network for people who love movies, TV, music and books. Track things you’ve watched, listened to or read. Save things you intend to come back to later. Create and share lists of your favorites, and find recommendations from the community.",
+    "features": [
+      "Customizable Search and Alerts: Filter by your favorite streaming app and get notified when items in your watchlist arrive on those services.",
+      "Tracking Tools: Track everything you’ve watched, listened to or read. See personalized annual and all-time stats pages based on your diary entries and watched films.",
+      "Social Interaction: Follow and see friends’ recommendations; filter their activity feed by type; pin favorites to your profile; and more.",
+      "Discover New Releases: Watch trailers, read user reviews, and be alerted when new movies, shows, books and movies come out.",
+      "Streaming Guide: Lists of the best movies and shows playing on all major services, including Netflix, Paramount, Max, Hulu, Peacock and Apple.",
+      "Ad Light: This product has a premium, modern user experience with limited interruptions from advertising."
+    ]
+  },
+  "CNN Personal Finance": {
+    "concept": "CNN Personal Finance will change the way you organize your financial life. Track, budget, plan, and do more with your money - together.",
+    "features": [
+      "Simplified Money Management: Effortlessly see your financial activity in one place. Quickly categorize your expenses, track spending, set budgets, and plan goals easily using our secure desktop and mobile apps.",
+      "Interactive Dashboards: Customize your dashboard view and add widgets to your account so the insights that are most helpful to you are always front and center.",
+      "Transaction Tracking: Review all transactions, or just some. Set your preferences to focus on big purchases, uncategorized items, or those paid from certain accounts. Review and edit quickly, on the go from the mobile app.",
+      "Reports and Personalized Snapshot: Stay informed with our monthly summary of your finances for quick insights on your top expense categories, cash flow, and changes to net worth.",
+      "Household Personalization: Get a full picture of your household finances by bringing separate and join accounts together, all into one view.",
+      "Long-term Goal Planning: Trying to buy a house? Retire? Plan further out by setting goals and tracking how you save for them alongside your day-to-day spending."
+    ]
+  },
+  "CNN Travel": {
+    "concept": "CNN’s comprehensive travel service helps you not only dream about your next trip, but book and plan it.",
+    "features": [
+      "City & Country Video Guides: Start dreaming about your next trip while watching our detailed destination guides. Each video introduces the destination and its most popular sights.",
+      "Insider Tips, Guides & Itineraries: Live like a local with insider recommendations on activities and sights. Also includes neighborhood guides and itineraries.",
+      "Restaurants & Accommodations: Find the best restaurants and accommodations with our lists of recommendations, sorted by neighborhood and type. We offer a curated list of our favorite places as well as a search tool with easy filtering.",
+      "Expert Q&As: Speak directly with one of our experts to help plan your trip and get advice on how to prepare.",
+      "Flight Deals: Save up to 40-90% off plane tickets. Tell us your hometown and we will keep a close eye on airfare to more than 900 locations, alerting you when the price drops.",
+      "Community: Join our community, contribute your reviews and recommendations, and follow posts from our network of globetrotting experts."
+    ]
+  },
+  "CNN Home": {
+    "concept": "Master the art of home management. Discover practical systems for seasonal upkeep, organization, entertaining, and smart purchasing decisions that create a functional, welcoming home.",
+    "features": [
+      "Smart Project Tutorials: Learn through concise video guides for projects of all scales. Follow clear instructions for bathroom refreshes, furniture updates, garden structures, and more.",
+      "Community Exchange: Connect with fellow enthusiasts to share tested tactics, challenges, and practical wisdom on gardening, storage solutions, and sustainable living.",
+      "Expert Recommendations: Access curated product and service selections from designers and industry experts. Learn where to splurge, where to save, when to hire help, and how to find trusted service providers.",
+      "Organization Systems: Implement practical organizational methods for real homes. Get solutions for inventory management, storage optimization, and sustainable routines.",
+      "Design Action Plan: Collect décor concepts you love and let our AI organize them into a cohesive vision with styling formulas matching your aesthetic.",
+      "Hosting Mastery: Create memorable gatherings with expert entertaining advice. Access practical checklists, time-saving techniques, and seasonal inspiration for dinner parties, outdoor celebrations, and home bar setups."
+    ]
+  },
+  "CNN Beauty": {
+    "concept": "Look and feel your best with CNN's premium advice on skincare, cosmetics, and hair health—offering interactive, personalized tools and expert-driven guidance.",
+    "features": [
+      "Live Expert Sessions: Scheduled live streams featuring dermatologists, estheticians, hairstylists, and makeup artists. Users could ask experts questions in real-time about skin and hair concerns, and get personalized advice, product recommendations, or guidance on specific routines.",
+      "Interactive Product Finder: Product reviews and ingredient breakdowns by self-care experts, including comparison tools for your skin type.",
+      "Video How-To Guides: Beginner, moderate and expert-level sessions for people new to beauty and skincare, covering the basics like how to layer skincare products, understanding your skin type, or creating a simple daily routine.",
+      "AI-Powered Personalization: Personalized beauty recommendations and tips tailored to your complexion and skin type.",
+      "Live Shopping: Live events where new products are revealed and sold exclusively to viewers. During these events, hosts would showcase products, explain how they work, and offer exclusive discounts to those watching."
+    ]
+  }
+}

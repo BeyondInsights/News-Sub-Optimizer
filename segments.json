@@ -1,0 +1,121 @@
+[{
+    "definitions": [
+      {
+        "group": "Total TAM",
+        "subgroups": [
+          {
+            "name": "All Respondents",
+            "filter": [],
+            "factor": 1
+          }
+        ]
+      },
+      {
+        "group": "News Access & Subscriptions",
+        "subgroups": [
+          {
+            "name": "Regularly Access CNN",
+            "filter": {
+              "CNN_Access": "Regular"
+            },
+            "factor": 0.6,
+            "indent": 0
+          },
+          {
+            "name": "Regularly Access CNN & 1+ News Subs",
+            "filter": {
+              "CNN_Access": "Regular",
+              "News_Subs": {
+                "$gte": 1
+              }
+            },
+            "factor": 0.35,
+            "indent": 1
+          },
+          {
+            "name": "Regularly Access CNN & 0 News Subs",
+            "filter": {
+              "CNN_Access": "Regular",
+              "News_Subs": 0
+            },
+            "factor": 0.25,
+            "indent": 1
+          },
+          {
+            "name": "Occasionally Access CNN",
+            "filter": {
+              "CNN_Access": "Occasional"
+            },
+            "factor": 0.4,
+            "indent": 0
+          },
+          {
+            "name": "Occasionally Access CNN & 1+ News Subs",
+            "filter": {
+              "CNN_Access": "Occasional",
+              "News_Subs": {
+                "$gte": 1
+              }
+            },
+            "factor": 0.15,
+            "indent": 1
+          },
+          {
+            "name": "Occasionally Access CNN & 0 News Subs",
+            "filter": {
+              "CNN_Access": "Occasional",
+              "News_Subs": 0
+            },
+            "factor": 0.25,
+            "indent": 1
+          }
+        ]
+      },
+      {
+        "group": "Gender",
+        "subgroups": [
+          {
+            "name": "Men",
+            "filter": {
+              "Gender": "Male"
+            },
+            "factor": 0.48
+          },
+          {
+            "name": "Women",
+            "filter": {
+              "Gender": "Female"
+            },
+            "factor": 0.52
+          }
+        ]
+      },
+      {
+        "group": "Age Groups",
+        "subgroups": [
+          {
+            "name": "18-34",
+            "filter": {
+              "Age_Group": "18-34"
+            },
+            "factor": 0.3
+          },
+          {
+            "name": "35-49",
+            "filter": {
+              "Age_Group": "35-49"
+            },
+            "factor": 0.25
+          },
+          {
+            "name": "50-74",
+            "filter": {
+              "Age_Group": "50-74"
+            },
+            "factor": 0.45
+          }
+        ]
+      }
+    ]
+  }
+  ]

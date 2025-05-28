@@ -1,0 +1,26 @@
+{
+    "analysis_type": ["TURF Bundle Optimization"],
+    "bundle_utilities": [
+      {
+        "reader_base": 0.0083,
+        "reader_1v": 0.4531,
+        "reader_2v": 0.7952,
+        "reader_3v": 0.8294,
+        "streaming_base": -0.0165,
+        "streaming_1v": 0.4283,
+        "streaming_2v": 0.7704,
+        "streaming_3v": 0.8046,
+        "allaccess_base": 1.2296,
+        "allaccess_1v": 1.6743,
+        "allaccess_2v": 2.0164,
+        "allaccess_3v": 2.0506
+      }
+    ],
+    "respondent_count": [2158],
+    "utility_progression": {
+      "description": ["Average utility by number of verticals added"],
+      "products": ["reader", "streaming", "allaccess"],
+      "vertical_counts": [0, 1, 2, 3]
+    }
+  }
+  

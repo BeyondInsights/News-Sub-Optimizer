@@ -1,0 +1,103 @@
+
+[
+  {
+    "Respondent_ID": "R0001",
+    "Gender": "Male",
+    "Age_Group": "35-49",
+    "Political": "Independent",
+    "CNN_Access": "Regular",
+    "News_Subs": 1,
+    "Linear_TV": "Yes",
+    "Ad_Preference": "50% Fewer Ads"
+  },
+  {
+    "Respondent_ID": "R0002",
+    "Gender": "Female",
+    "Age_Group": "18-34",
+    "Political": "Democrat",
+    "CNN_Access": "Occasional",
+    "News_Subs": 0,
+    "Linear_TV": "No",
+    "Ad_Preference": "No Ads"
+  },
+  {
+    "Respondent_ID": "R0003",
+    "Gender": "Female",
+    "Age_Group": "50-74",
+    "Political": "Republican",
+    "CNN_Access": "Regular",
+    "News_Subs": 2,
+    "Linear_TV": "Yes",
+    "Ad_Preference": "Full Ads"
+  },
+  {
+    "Respondent_ID": "R0004",
+    "Gender": "Male",
+    "Age_Group": "18-34",
+    "Political": "Independent",
+    "CNN_Access": "Occasional",
+    "News_Subs": 1,
+    "Linear_TV": "No",
+    "Ad_Preference": "50% Fewer Ads"
+  },
+  {
+    "Respondent_ID": "R0005",
+    "Gender": "Male",
+    "Age_Group": "35-49",
+    "Political": "Democrat",
+    "CNN_Access": "Regular",
+    "News_Subs": 0,
+    "Linear_TV": "Yes",
+    "Ad_Preference": "No Ads"
+  },
+  {
+    "Respondent_ID": "R0006",
+    "Gender": "Female",
+    "Age_Group": "50-74",
+    "Political": "Independent",
+    "CNN_Access": "Occasional",
+    "News_Subs": 3,
+    "Linear_TV": "No",
+    "Ad_Preference": "Full Ads"
+  },
+  {
+    "Respondent_ID": "R0007",
+    "Gender": "Male",
+    "Age_Group": "18-34",
+    "Political": "Republican",
+    "CNN_Access": "Regular",
+    "News_Subs": 1,
+    "Linear_TV": "Yes",
+    "Ad_Preference": "No Ads"
+  },
+  {
+    "Respondent_ID": "R0008",
+    "Gender": "Female",
+    "Age_Group": "35-49",
+    "Political": "Democrat",
+    "CNN_Access": "Occasional",
+    "News_Subs": 2,
+    "Linear_TV": "No",
+    "Ad_Preference": "50% Fewer Ads"
+  },
+  {
+    "Respondent_ID": "R0009",
+    "Gender": "Other",
+    "Age_Group": "18-34",
+    "Political": "Independent",
+    "CNN_Access": "Regular",
+    "News_Subs": 0,
+    "Linear_TV": "Yes",
+    "Ad_Preference": "Full Ads"
+  },
+  {
+    "Respondent_ID": "R0010",
+    "Gender": "Male",
+    "Age_Group": "50-74",
+    "Political": "Democrat",
+    "CNN_Access": "Occasional",
+    "News_Subs": 1,
+    "Linear_TV": "No",
+    "Ad_Preference": "No Ads"
+  }
+]

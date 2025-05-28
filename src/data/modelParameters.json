@@ -1,0 +1,16 @@
+
+{
+  "Total_TAM": 105624640,
+  "Base_Conversion_Rate": 0.02,
+  "DMU_Factor_1": 1,
+  "DMU_Factor_2": 0.85,
+  "DMU_Factor_3": 0.7,
+  "DMU_Factor_4": 0.55,
+  "DMU_Factor_5": 0.4,
+  "DMU_Factor_6_plus": 0.25,
+  "Feature_Imputation_Factor": 0.7,
+  "Market_Awareness": 0.7,
+  "Market_Distribution": 0.85,
+  "Market_Competition": 0.9,
+  "Market_Marketing": 0.8
+}

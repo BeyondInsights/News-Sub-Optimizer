@@ -1,0 +1,26 @@
+import csv
+import json
+
+def csv_to_json(csv_filepath, json_filepath):
+    """
+    Converts a CSV file to a JSON file.
+
+    Args:
+        csv_filepath (str): The path to the input CSV file.
+        json_filepath (str): The path to the output JSON file.
+    """
+    data = []
+    with open(csv_filepath, mode='r', encoding='utf-8') as csv_file:
+        csv_reader = csv.DictReader(csv_file)
+        for row in csv_reader:
+            data.append(row)
+
+    with open(json_filepath, mode='w', encoding='utf-8') as json_file:
+        json.dump(data, json_file, indent=4)
+
+if __name__ == '__main__':
+    # Replace 'drn_data.csv' with the actual path to your CSV file
+    csv_file_path = 'drn_data.csv'
+    # Replace 'drn_data.json' with the desired name for your JSON file
+    json_file_path = 'drn_data.json'
+    csv_to_json(csv_file_path, json_file_path)

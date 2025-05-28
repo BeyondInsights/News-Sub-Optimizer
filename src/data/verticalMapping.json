@@ -1,0 +1,13 @@
+
+[
+  {"Vertical_Code": "D1_1", "Vertical_Name": "CNN Longevity", "Design": "1", "Category": "Unique"},
+  {"Vertical_Code": "D1_2", "Vertical_Name": "CNN Meditation & Mindfulness", "Design": "1", "Category": "Unique"},
+  {"Vertical_Code": "D1_3", "Vertical_Name": "CNN Fitness", "Design": "1", "Category": "Unique"},
+  {"Vertical_Code": "D1_4", "Vertical_Name": "CNN Entertainment Tracker", "Design": "1", "Category": "Unique"},
+  {"Vertical_Code": "D2_1", "Vertical_Name": "CNN Travel", "Design": "2", "Category": "Unique"},
+  {"Vertical_Code": "D2_2", "Vertical_Name": "CNN Home", "Design": "2", "Category": "Unique"},
+  {"Vertical_Code": "D2_3", "Vertical_Name": "CNN Beauty", "Design": "2", "Category": "Unique"},
+  {"Vertical_Code": "D2_4", "Vertical_Name": "CNN Weather & Natural Phenomena", "Design": "2", "Category": "Unique"},
+  {"Vertical_Code": "B1", "Vertical_Name": "CNN Expert Buying Guide", "Design": "Both", "Category": "Bridge"},
+  {"Vertical_Code": "B2", "Vertical_Name": "CNN Personal Finance", "Design": "Both", "Category": "Bridge"}
+]
