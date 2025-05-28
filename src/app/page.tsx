@@ -5,10 +5,8 @@ import type { ProductConfig, ReportData, ReportType, OutputType, ProductProfileD
 import demographicsSample from '@/data/demographics.json'; // Import sample demographics
 import attributeImportanceSample from '@/data/attributeImportance.json';
 import partWorthUtilitiesSample from '@/data/partWorthUtilities.json';
-import respondentData from '@/data/respondentData.json';
-import verticalMapping from '@/data/verticalMapping.json';
+import { respondentData, verticalMapping } from '@/lib/data';
 import Link from 'next/link';
-
 import coreProductDescriptionsData from '@/data/coreProductDescriptions.json';
 import readerFeatureDescriptionsData from '@/data/readerFeatureDescriptions.json';
 import streamingFeatureDescriptionsData from '@/data/streamingFeatureDescriptions.json';
