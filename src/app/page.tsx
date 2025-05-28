@@ -6,7 +6,7 @@ import demographicsSample from '@/data/demographics.json'; // Import sample demo
 import attributeImportanceSample from '@/data/attributeImportance.json';
 import partWorthUtilitiesSample from '@/data/partWorthUtilities.json';
 import respondentData from '@/data/respondentData.json';
-import verticalMappings from '@/data/verticalMapping.json';
+import verticalMapping from '@/data/verticalMapping.json';
 import Link from 'next/link';
 
 import coreProductDescriptionsData from '@/data/coreProductDescriptions.json';
