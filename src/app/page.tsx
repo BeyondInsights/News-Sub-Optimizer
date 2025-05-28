@@ -561,163 +561,165 @@ export default function SimulatorPage() {
     }
   }, [cardDataState]);
 
-  const updateCardUI = useCallback((cardNum: number, productType: string) => {
-    const cardElement = document.querySelector(`.card[data-card="${cardNum}"]`);
-    if (!cardElement) return;
+  // SECTION 1: Replace the entire updateCardUI function with this:
 
-    const contentDiv = cardElement.querySelector('.content') as HTMLElement;
-    const header = cardElement.querySelector('.header') as HTMLElement;
-    const productSelect = cardElement.querySelector('.product-select') as HTMLSelectElement;
+const updateCardUI = useCallback((cardNum: number) => {
+  const cardElement = document.querySelector(`.card[data-card="${cardNum}"]`);
+  if (!cardElement) return;
 
-    if (header) header.textContent = productType || `PRODUCT ${cardNum}`;
-    if (productSelect) productSelect.value = productType;
+  const contentDiv = cardElement.querySelector('.content') as HTMLElement;
+  const header = cardElement.querySelector('.card-header') as HTMLElement;
+  const productSelect = cardElement.querySelector('.product-select') as HTMLSelectElement;
 
-    if (!contentDiv) return;
-    
-    // Clear content safely
-    while (contentDiv.firstChild) {
-        contentDiv.firstChild.remove();
-    }
+  const cardConfig = cardDataState[cardNum];
+  const productType = cardConfig.product;
 
-    if (!productType) {
-      contentDiv.innerHTML = '<div class="text-muted" style="padding: 20px; text-align: center;">Select a product type to configure</div>';
-      return;
-    }
+  if (header) header.textContent = productType ? `PRODUCT ${cardNum}` : `PRODUCT ${cardNum}`;
+  if (productSelect) productSelect.value = productType;
 
-    // Build the product UI
-    const cardConfig = cardDataState[cardNum];
-    const pricing = getPricingRangeForProduct(productType, cardConfig.verticals.length);
-    
-    let contentHTML = '<div class="product-config">';
+  if (!contentDiv) return;
+  
+  // Clear content safely
+  while (contentDiv.firstChild) {
+    contentDiv.firstChild.remove();
+  }
 
-    // Features sections for non-standalone products
-    if (productType !== 'CNN Standalone Vertical') {
-      // Reader features
-      if (productType === 'CNN Reader' || productType === 'CNN All-Access') {
-        contentHTML += `
-          <div class="feature-section">
-            <h4>Reader Features</h4>
-            <div class="feature-list" id="reader-features-${cardNum}">
+  if (!productType) {
+    contentDiv.innerHTML = '<div class="text-muted" style="padding: 20px; text-align: center; font-size: 12px; color: #666;">Select a product type to configure</div>';
+    return;
+  }
+
+  const pricing = getPricingRangeForProduct(productType, cardConfig.verticals.length);
+  
+  let contentHTML = '<div class="product-config">';
+
+  // Features sections for non-standalone products
+  if (productType !== 'CNN Standalone Vertical') {
+    // Reader features
+    if (productType === 'CNN Reader' || productType === 'CNN All-Access') {
+      contentHTML += `
+        <div class="feature-section">
+          <h4>Reader Features <span class="feature-count">(${cardConfig.readerFeatures.length} selected)</span></h4>
+          <div class="feature-display-box">
+            <div class="feature-list">
               ${cardConfig.readerFeatures.map(f => `
                 <div class="feature-tag">
-                  ${f}
+                  <span>${f}</span>
                   <span class="remove-feature" onclick="window.removeFeatureWrapper(${cardNum}, 'reader', '${f}')">&times;</span>
                 </div>
               `).join('')}
             </div>
-            <button class="add-feature-btn" onclick="window.addFeaturesWrapper(${cardNum}, 'reader')">+ Add Reader Features</button>
-          </div>`;
-      }
+          </div>
+          <button class="add-feature-btn" onclick="window.addFeaturesWrapper(${cardNum}, 'reader')">+ Add</button>
+        </div>`;
+    }
 
-      // Streaming features
-      if (productType === 'CNN Streaming' || productType === 'CNN All-Access') {
-        contentHTML += `
-          <div class="feature-section">
-            <h4>Streaming Features</h4>
-            <div class="feature-list" id="streaming-features-${cardNum}">
+    // Streaming features
+    if (productType === 'CNN Streaming' || productType === 'CNN All-Access') {
+      contentHTML += `
+        <div class="feature-section">
+          <h4>Streaming Features <span class="feature-count">(${cardConfig.streamingFeatures.length} selected)</span></h4>
+          <div class="feature-display-box">
+            <div class="feature-list">
               ${cardConfig.streamingFeatures.map(f => `
                 <div class="feature-tag">
-                  ${f}
+                  <span>${f}</span>
                   <span class="remove-feature" onclick="window.removeFeatureWrapper(${cardNum}, 'streaming', '${f}')">&times;</span>
                 </div>
               `).join('')}
             </div>
-            <button class="add-feature-btn" onclick="window.addFeaturesWrapper(${cardNum}, 'streaming')">+ Add Streaming Features</button>
-          </div>`;
-      }
+          </div>
+          <button class="add-feature-btn" onclick="window.addFeaturesWrapper(${cardNum}, 'streaming')">+ Add</button>
+        </div>`;
     }
+  }
 
-    // Verticals section
-    contentHTML += `
-      <div class="feature-section">
-        <h4>${productType === 'CNN Standalone Vertical' ? 'Select Vertical' : 'Verticals'}</h4>
-        ${productType === 'CNN Standalone Vertical' ? `
-          <select class="vertical-select" onchange="window.updateStandaloneVerticalWrapper(${cardNum}, this.value)">
-            <option value="">Choose a vertical...</option>
-            ${AVAILABLE_FEATURES_LISTS.vertical.map(v => `
-              <option value="${v}" ${cardConfig.verticals[0] === v ? 'selected' : ''}>${v}</option>
-            `).join('')}
-          </select>
-        ` : `
-          <div class="feature-list" id="verticals-${cardNum}">
+  // Verticals section
+  contentHTML += `
+    <div class="feature-section">
+      <h4>${productType === 'CNN Standalone Vertical' ? 'Select Vertical' : 'Verticals'} <span class="feature-count">(${cardConfig.verticals.length} selected)</span></h4>
+      ${productType === 'CNN Standalone Vertical' ? `
+        <select class="product-select" onchange="window.updateStandaloneVerticalWrapper(${cardNum}, this.value)">
+          <option value="">Choose a vertical...</option>
+          ${AVAILABLE_FEATURES_LISTS.vertical.map(v => `
+            <option value="${v}" ${cardConfig.verticals[0] === v ? 'selected' : ''}>${v}</option>
+          `).join('')}
+        </select>
+      ` : `
+        <div class="feature-display-box">
+          <div class="feature-list">
             ${cardConfig.verticals.map(v => `
               <div class="feature-tag">
-                ${v}
+                <span>${v}</span>
                 <span class="remove-feature" onclick="window.removeFeatureWrapper(${cardNum}, 'vertical', '${v}')">&times;</span>
               </div>
             `).join('')}
           </div>
-          <button class="add-feature-btn" onclick="window.addFeaturesWrapper(${cardNum}, 'vertical')">+ Add Verticals</button>
-        `}
-      </div>`;
-
-    // Pricing section
-    contentHTML += `
-      <div class="pricing-section">
-        <h4>Pricing</h4>
-        <div class="price-slider-container">
-          <input type="range" min="${pricing.min}" max="${pricing.max}" value="${cardConfig.monthlyRate}" 
-            class="price-slider" step="0.01"
-            oninput="window.updatePriceWrapper(${cardNum}, parseFloat(this.value))" />
-          <div class="price-display">$${cardConfig.monthlyRate.toFixed(2)}/month</div>
         </div>
-        
-        <div class="pricing-options">
-          <label>
-            <input type="radio" name="pricing-${cardNum}" value="monthly" 
-              ${cardConfig.pricingType === 'monthly' ? 'checked' : ''}
-              onchange="window.updatePricingTypeWrapper(${cardNum}, 'monthly')">
-            Monthly Only
-          </label>
-          <label>
-            <input type="radio" name="pricing-${cardNum}" value="annual" 
-              ${cardConfig.pricingType === 'annual' ? 'checked' : ''}
-              onchange="window.updatePricingTypeWrapper(${cardNum}, 'annual')">
-            Annual Only
-          </label>
-          <label>
-            <input type="radio" name="pricing-${cardNum}" value="both" 
-              ${cardConfig.pricingType === 'both' ? 'checked' : ''}
-              onchange="window.updatePricingTypeWrapper(${cardNum}, 'both')">
-            Both Options
-          </label>
-        </div>
-        
-        ${cardConfig.pricingType === 'both' ? `
-          <div class="discount-section">
-            <h5>Annual Discount:</h5>
-            <select onchange="window.updateDiscountWrapper(${cardNum}, this.value)">
-              <option value="">Select discount...</option>
-              <option value="free" ${cardConfig.discount === 'free' ? 'selected' : ''}>3 Months Free (25% off)</option>
-              <option value="30" ${cardConfig.discount === '30' ? 'selected' : ''}>30% Off First Year</option>
-              <option value="50" ${cardConfig.discount === '50' ? 'selected' : ''}>50% Off First Year</option>
-            </select>
-          </div>
-        ` : ''}
-        
-        <div class="pricing-display" id="pricing-display-${cardNum}">
-          ${updatePriceDisplayHTML(cardNum)}
-        </div>
-      </div>`;
+        <button class="add-feature-btn" onclick="window.addFeaturesWrapper(${cardNum}, 'vertical')">+ Add</button>
+      `}
+    </div>`;
 
-    contentHTML += '</div>';
-    contentDiv.innerHTML = contentHTML;
-  }, [cardDataState, getPricingRangeForProduct, updatePriceDisplayHTML]);
+  // Pricing section
+  contentHTML += `
+    <div class="pricing-section">
+      <h4>Configure Pricing</h4>
+      
+      <div class="pricing-options">
+        <button class="pricing-option-btn ${cardConfig.pricingType === 'monthly' ? 'active' : ''}" 
+          onclick="window.updatePricingTypeWrapper(${cardNum}, 'monthly')">
+          Monthly Only
+        </button>
+        <button class="pricing-option-btn ${cardConfig.pricingType === 'annual' ? 'active' : ''}" 
+          onclick="window.updatePricingTypeWrapper(${cardNum}, 'annual')">
+          Annual Only
+        </button>
+        <button class="pricing-option-btn ${cardConfig.pricingType === 'both' ? 'active' : ''}" 
+          onclick="window.updatePricingTypeWrapper(${cardNum}, 'both')">
+          Both
+        </button>
+      </div>
+      
+      ${cardConfig.pricingType === 'both' ? `
+        <div class="discount-section">
+          <h5>Annual Discount:</h5>
+          <select onchange="window.updateDiscountWrapper(${cardNum}, this.value)">
+            <option value="">Select discount...</option>
+            <option value="free" ${cardConfig.discount === 'free' ? 'selected' : ''}>3 Months Free (25% off)</option>
+            <option value="30" ${cardConfig.discount === '30' ? 'selected' : ''}>30% Off First Year</option>
+            <option value="50" ${cardConfig.discount === '50' ? 'selected' : ''}>50% Off First Year</option>
+          </select>
+        </div>
+      ` : ''}
+      
+      <div class="price-slider-container">
+        <input type="range" 
+          min="${pricing.min}" 
+          max="${pricing.max}" 
+          value="${cardConfig.monthlyRate}" 
+          class="price-slider" 
+          step="0.01"
+          oninput="window.updatePriceWrapper(${cardNum}, parseFloat(this.value))" />
+        <div class="price-endpoints">
+          <span>$${pricing.min.toFixed(2)}/mo</span>
+          <span>$${pricing.max.toFixed(2)}/mo</span>
+        </div>
+      </div>
+      
+      <div class="current-price-display">
+        <div class="current-price">$${cardConfig.monthlyRate.toFixed(2)} / mo</div>
+        <div class="price-label">Monthly: $${cardConfig.monthlyRate.toFixed(2)}</div>
+        <div class="price-label">Inferred Annual: $${(cardConfig.monthlyRate * 12).toFixed(2)}</div>
+      </div>
+      
+      <div class="pricing-display" id="pricing-display-${cardNum}">
+        ${updatePriceDisplayHTML(cardNum)}
+      </div>
+    </div>`;
 
-  // Update UI when card data changes
-  useEffect(() => {
-    Object.keys(cardDataState).forEach(idStr => {
-      const cardId = parseInt(idStr);
-      const cardElement = document.querySelector(`.card[data-card="${cardId}"] .pricing-display`);
-      if (cardElement) {
-        cardElement.innerHTML = updatePriceDisplayHTML(cardId);
-      }
-      const mainCardDiv = document.querySelector(`.card[data-card="${cardId}"]`);
-      if (mainCardDiv) {
-          mainCardDiv.classList.toggle('inactive', !activeProductsState.has(cardId));
-      }
-    });
-  }, [cardDataState, activeProductsState, updatePriceDisplayHTML]);
+  contentHTML += '</div>';
+  contentDiv.innerHTML = contentHTML;
+}, [cardDataState, getPricingRangeForProduct, updatePriceDisplayHTML]);
 
   const clearAllSelections = useCallback(() => {
     showBrandedConfirm(
