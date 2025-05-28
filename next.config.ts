@@ -7,7 +7,6 @@ const nextConfig: NextConfig = {
   eslint: {
     ignoreDuringBuilds: true,
   },
-  webSocketServer: false,
   images: {
     remotePatterns: [
       {
@@ -30,6 +29,7 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+  allowedOrigins: ['*'],
 };
 
 export default nextConfig;

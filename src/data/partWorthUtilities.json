@@ -1,0 +1,16 @@
+{
+    "CNN Reader": {
+      "base": 2.5,
+      "features": {
+        "Daily Briefing": 0.8,
+        "Archive Access": 0.6
+      }
+    },
+    "CNN Streaming": {
+      "base": 2.2,
+      "features": {
+        "Live Channels": 0.9,
+        "On-Demand Shows": 0.7
+      }
+    }
+  }
